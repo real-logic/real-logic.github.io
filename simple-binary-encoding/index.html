@@ -26,28 +26,41 @@
         <hr>
         <section id="main_content">
             <h2>Simple Binary Encoding (SBE)</h2>
-            <p>SBE is an OSI layer 6 presentation for encoding/decoding messages in binary format to support low-latency
-               applications. The <a href="https://github.com/real-logic/simple-binary-encoding">SBE project</a> on
-               GitHub is the reference implementation for the
-               <a href="http://www.fixtradingcommunity.org/pg/file/fplpo/read/1196757/simple-binary-encoding-release-candidate-2">FIX SBE RC2</a>
-               standard for the encoding of financial messages.</p>
-            <p>SBE provides a compiler for taking a message schema and generating stubs for messaging parsing in
-               multiple languages. Currently Java, C++, and C# (courtesy of <a href="http://weareadaptive.com/">Adaptive</a>) are supported.
-               SBE allows allows for the on-the-fly decoding of messages from a compiler generated meta description.
-               Details for using SBE can be found on the <a href="https://github.com/real-logic/simple-binary-encoding/wiki">Wiki</a>.</p>
-            <p>Performance is a key requirement for SBE. Performance with consideration to throughput and latency
-               of encoding/decoding binary messages exchanged via a local area network (LAN) of servers which
-               typically have x86 processors. For example, the transmission of financial orders and market data in a
-               co-located environment.</p>
-            <p>The design follows a number of
-               <a href="https://github.com/real-logic/simple-binary-encoding/wiki/Design-Principles">principles</a> and
-               makes no compromise by adding features that violate these principles. You may find that alternative
-               codecs, such as Protocol Buffers, offer more features. Features such as allowing strings at any location
-               in a message. SBE only allows variable length fields to come at the end of a message. SBE makes some
-               restrictions in return for more than an order of magnitude increase in throughput at very low,
-               and importantly, predictable latency.</p>
-            <p>To get started with with SBE please read the
-               <a href="https://github.com/real-logic/simple-binary-encoding/wiki">Wiki</a> and then get the latest at:
+            <p>
+                SBE is an OSI layer 6 presentation for encoding/decoding messages in binary format to support low-latency
+                applications. The <a href="https://github.com/real-logic/simple-binary-encoding">SBE project</a> on
+                GitHub is the reference implementation for the
+                <a href="http://www.fixtradingcommunity.org/pg/file/fplpo/read/1196757/simple-binary-encoding-release-candidate-2">FIX SBE RC2</a>
+                standard for the encoding of financial messages.
+            </p>
+
+            <p>
+                SBE provides a compiler for taking a message schema and generating stubs for messaging parsing in
+                multiple languages. Currently Java, C++, and C# (courtesy of <a href="http://weareadaptive.com/">Adaptive</a>) are
+                supported. SBE allows allows for the on-the-fly decoding of messages from a compiler generated meta description.
+                Details for using SBE can be found on the <a href="https://github.com/real-logic/simple-binary-encoding/wiki">Wiki</a>.
+            </p>
+
+            <p>
+                Performance is a key requirement for SBE. Performance with consideration to throughput and latency
+                of encoding/decoding binary messages exchanged via a local area network (LAN) of servers which
+                typically have x86 processors. For example, the transmission of financial orders and market data in a
+                co-located environment.
+            </p>
+
+            <p>
+                The design follows a number of
+                <a href="https://github.com/real-logic/simple-binary-encoding/wiki/Design-Principles">principles</a> and
+                makes no compromise by adding features that violate these principles. You may find that alternative
+                codecs, such as Protocol Buffers, offer more features. Features such as allowing strings at any location
+                in a message. SBE only allows variable length fields to come at the end of a message. SBE makes some
+                restrictions in return for more than an order of magnitude increase in throughput at very low,
+                and importantly, predictable latency.
+            </p>
+
+            <p>
+                To get started with with SBE please read the
+                <a href="https://github.com/real-logic/simple-binary-encoding/wiki">Wiki</a> and then get the latest at:
             </p>
             <ul>
                 <li><a href="http://search.maven.org/#artifactdetails%7Cuk.co.real-logic%7Csbe%7C1.0.3-RC2%7Cjar">Java</a>: Maven Central</li>
