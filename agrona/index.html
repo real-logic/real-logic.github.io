@@ -28,14 +28,15 @@
             <h2>Agrona</h2>
             <p>
                 Agrona provides a library of data structures and utility methods that are a common need when building
-                high-performance applications in Java and C++. The sort of things you can find in
+                high-performance applications in Java. The sort of things you can find in
                 <a href="https://github.com/real-logic/Agrona">Agrona</a> are:
             </p>
             <ul>
                 <li>Buffers - Thread safe direct and atomic for working with on and off heap memory with memory ordering semantics.</li>
+                <li>Lists - Array backed lists of int/long primitives to avoid boxing.</li>
                 <li>Maps - Open addressing and linear probing with int/long primitive keys to object reference values.</li>
                 <li>Maps - Open addressing and linear probing with int/long primitive keys to int/long values.</li>
-                <li>Sets - Open addressing and linear probing for int/long primitives.</li>
+                <li>Sets - Open addressing and linear probing for int/long primitives and object reference values.</li>
                 <li>Cache - Set Associative with int/long primitive keys to object reference values.</li>
                 <li>Queues - Lock-less implementations for low-latency applications.</li>
                 <li>Ring/Broadcast Buffers - implemented off-heap for IPC communication.</li>
